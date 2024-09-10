@@ -2,6 +2,10 @@
 
 This project features a simple web form designed for user registration. The form allows users to input their name, email, age, membership type, and other preferences, and provides a user-friendly interface with modern styling.
 
+## Live Demo
+
+You can view the live version of this tribute page [here](https://thedcollins.github.io/build_a_survey_form/).
+
 ## Project Overview
 
 The project includes the following key components:
