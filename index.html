@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding and title of the page -->
+  <meta charset="utf-8">
+  <title>New user form</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <!-- Header section with the page title -->
+  <header>
+    <h1 id="title">New user form</h1>
+  </header>
+  <!-- Centered description paragraph -->
+  <div class="center">
+    <p id="description" class="first">Fill the form to join the Collins Club.</p>
+  </div>
+  <!-- Form element with id survey-form -->
+  <form id="survey-form">
+    <div class="center">
+      <!-- Name input field -->
+      <label id="name-label" for="name">Name
+        <input name="name" id="name" type="text" required placeholder="Enter your name" class="block">
+      </label>
+      <!-- Email input field -->
+      <label id="email-label">Email
+        <input id="email" type="email" required placeholder="Enter your email" class="block">
+      </label>
+      <!-- Age input field -->
+      <label id="number-label">Age (optional)
+        <input id="number" type="number" required min="13" max="120" placeholder="Enter your age" class="block">
+      </label>
+      <!-- Dropdown selection for membership type -->
+      <p>What membership you wish to apply for?</p>
+      <select id="dropdown" class="block">
+        <option value="">(select one)</option>
+        <option value="1">Regular</option>
+        <option value="2">Premium</option>
+        <option value="3">Premium Plus</option>
+      </select>
+      <!-- Radio buttons for recommendation choice -->
+      <p>Would you recommend Collins Club to a friend?</p>
+      <label>
+        <input type="radio" name="choice" value="Definitely" class="inline"> Definitely
+      </label>
+      <label>
+        <input type="radio" name="choice" value="Maybe" class="inline"> Maybe
+      </label>
+      <label>
+        <input type="radio" name="choice" value="Not Sure" class="inline"> Not sure
+      </label>
+      <!-- Checkbox options for extra perks -->
+      <p>Extra perks to include in your Collins Club Membership</p>
+      <label>
+        <input type="checkbox" value="Breakfast"> Breakfast
+      </label>
+      <label>
+        <input type="checkbox" value="Lunch"> Lunch
+      </label>
+      <label>
+        <input type="checkbox" value="Dinner"> Dinner
+      </label>
+      <label>
+        <input type="checkbox" value="Tea"> Tea (served 3 times a day)
+      </label>
+      <!-- Textarea for comments or suggestions -->
+      <p>Any comments or suggestions?</p>
+      <textarea class="block"></textarea>
+      <!-- Submit button -->
+      <button id="submit" class="block">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
